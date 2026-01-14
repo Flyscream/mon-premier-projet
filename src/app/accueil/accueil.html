@@ -1,0 +1,32 @@
+<router-outlet>
+<nav class="navbar">
+  <a routerLink="/">Accueil</a>
+  <a routerLink="/projets">Mes Projets</a>
+  <a routerLink="/contact">Contact</a>
+</nav>
+
+<div style="text-align: center; font-family: sans-serif; ">
+  <h1>Mon premier projet</h1>
+
+  <p>Le titre de mon projet est : <strong>{{ title() }}</strong></p>
+
+  <button (click)="title.set('Mon projet a changé !')">
+    Changer le titre
+  </button>
+
+  <button (click)="toggle()">Afficher le secret</button>
+
+  @if (isVisible()) {
+  <p style="color: red;">message secret ! </p>
+}
+</div>
+
+
+<h2 style="text-align: center; margin: 40px auto 10px auto;">Mes compétences</h2>
+<ul>
+  @for (competence of competences(); track competence) {
+    <li>{{ competence }}</li>
+  }
+</ul>
+
+</router-outlet>
