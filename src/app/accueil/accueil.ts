@@ -10,5 +10,12 @@ import { RouterLink } from '@angular/router';
 })
 export class Accueil {
   protected readonly title = signal('mon-premier-projet');
+  
+  isVisible = signal(false); 
+
+  toggle() {
+    this.isVisible.set(!this.isVisible());
+  }
+
   competences = signal(['HTML','CSS','Java','JavaScript','Angular','Python','PHP','MySQL',"CSV"]);
 }
