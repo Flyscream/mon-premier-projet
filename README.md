@@ -15,6 +15,12 @@ Lancer le serveur de développement
 ```bash
 ng serve
 ```
+
+Pi=our acceder au code en ligne de  commande depuis warp ou un autre terminal il faut fairre 
+```bash
+code . 
+```
+
 Ouvrir http://localhost:4200/ — l'application se recharge automatiquement lors de modifications.
 
 Construire pour la production
