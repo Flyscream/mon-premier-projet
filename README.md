@@ -16,7 +16,7 @@ Lancer le serveur de développement
 ng serve
 ```
 
-Pi=our acceder au code en ligne de  commande depuis warp ou un autre terminal il faut fairre 
+Pour acceder au code en ligne de  commande depuis warp ou un autre terminal il faut fairre 
 ```bash
 code . 
 ```
