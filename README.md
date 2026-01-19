@@ -16,12 +16,15 @@ Lancer le serveur de développement
 ng serve
 ```
 
-Pour acceder au code en ligne de  commande depuis warp ou un autre terminal il faut fairre 
+Pour accèder au code en ligne de  commande depuis warp ou un autre terminal il faut faire :
 ```bash
 code . 
 ```
 
 Ouvrir http://localhost:4200/ — l'application se recharge automatiquement lors de modifications.
+
+
+# Manuellement en ligne de commmande : 
 
 Construire pour la production
 ```bash
@@ -40,5 +43,8 @@ Tests end-to-end
 ng e2e
 ```
 
-Ressource
+
+# Ressource
 - Documentation Angular CLI : https://angular.dev/tools/cli
+- Documentation complète pour l'installation : https://angular.dev/installation
+
