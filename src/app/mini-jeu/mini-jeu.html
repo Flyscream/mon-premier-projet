@@ -1,0 +1,18 @@
+<div class="game-container">
+  <h1>Mini-Jeu Morpion</h1>
+
+  @if (winner()) {
+    <div class="status winner">Gagnant : {{ winner() }}</div>
+  } @else {  <div class="status">Joueur actuel : <strong>{{ currentPlayer() }}</strong></div>
+  } 
+
+  <div class="grid">
+    @for (cell of board(); track $index) {
+      <button class="cell" (click)="makeMove($index)" [disabled]="cell !== '' || winner()">
+        {{ cell }}
+      </button>
+    }
+  </div>
+
+  <button class="reset-button" (click)="resetGame()">Recommencer le jeu</button>
+</div>
